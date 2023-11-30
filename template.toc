@@ -1,0 +1,13 @@
+\contentsline {section}{\numberline {1}north-h}{2}{section.1}%
+\contentsline {subsection}{\numberline {1.1}树状数组（单点修改，区间查询）}{2}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}树状数组（区间修改，单点查询）}{2}{subsection.1.2}%
+\contentsline {subsection}{\numberline {1.3}树状数组（区间修改，区间查询）}{2}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.4}线段树（朴素）}{3}{subsection.1.4}%
+\contentsline {subsection}{\numberline {1.5}线段树 （lazy）}{4}{subsection.1.5}%
+\contentsline {subsection}{\numberline {1.6}ST表}{5}{subsection.1.6}%
+\contentsline {subsection}{\numberline {1.7}单哈希}{6}{subsection.1.7}%
+\contentsline {subsection}{\numberline {1.8}双哈希}{6}{subsection.1.8}%
+\contentsline {subsection}{\numberline {1.9}自然溢出}{7}{subsection.1.9}%
+\contentsline {subsection}{\numberline {1.10}快读快写}{7}{subsection.1.10}%
+\contentsline {subsection}{\numberline {1.11}取模}{8}{subsection.1.11}%
+\contentsline {subsection}{\numberline {1.12}二维树状数组}{9}{subsection.1.12}%
