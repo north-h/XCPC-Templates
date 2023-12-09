@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.8.26)  30 NOV 2023 23:46
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.8.26)  7 DEC 2023 00:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -786,25 +786,20 @@ LaTeX Font Warning: Font shape `TU/FandolFang-Regular(0)/b/n' undefined
 
 [3]) (./north-h/线段树 （lazy）.cpp [4]) (./north-h/ST表.cpp [5]) (./north-h/单哈希.cpp)
 (./north-h/双哈希.cpp [6]) (./north-h/自然溢出.cpp) (./north-h/快读快写.cpp) [7]
-(./north-h/取模.cpp [8]) (./north-h/二维树状数组.cpp [9]) [10] (./template.aux)
+(./north-h/取模.cpp [8]) (./north-h/二维树状数组.cpp [9]) (./north-h/字典树.cpp) [10]
+(./template.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `template.out':
-(rerunfilecheck)             Before: 4D721B0AE73EF86DFD2CFA4B17CA8460;1084
-(rerunfilecheck)             After:  8F2EB0FA7BC204228CF0A9D482FE5DC5;1447.
+Package rerunfilecheck Info: File `template.out' has not changed.
+(rerunfilecheck)             Checksum: 82C3C3D3E5CDD49D22D51D357DBDAE56;1530.
  ) 
 Here is how much of TeX's memory you used:
- 15872 strings out of 476683
- 325495 string characters out of 5807575
+ 15929 strings out of 476683
+ 328450 string characters out of 5807575
  2210012 words of memory out of 5000000
- 35849 multiletter control sequences out of 15000+600000
- 516951 words of font info for 89 fonts, out of 8000000 for 9000
+ 35899 multiletter control sequences out of 15000+600000
+ 517421 words of font info for 93 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,12n,81p,384b,1816s stack positions out of 10000i,1000n,20000p,200000b,200000s
 

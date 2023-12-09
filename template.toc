@@ -11,3 +11,4 @@
 \contentsline {subsection}{\numberline {1.10}快读快写}{7}{subsection.1.10}%
 \contentsline {subsection}{\numberline {1.11}取模}{8}{subsection.1.11}%
 \contentsline {subsection}{\numberline {1.12}二维树状数组}{9}{subsection.1.12}%
+\contentsline {subsection}{\numberline {1.13}字典树}{10}{subsection.1.13}%
