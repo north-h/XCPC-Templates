@@ -16,7 +16,7 @@
 
 \linespread{1.2}
 
-\title{Template For ICPC}
+\title{Template For XCPC}
 \author{north- @ SMU}
 \definecolor{dkgreen}{rgb}{0,0.6,0}
 \definecolor{gray}{rgb}{0.5,0.5,0.5}
@@ -78,7 +78,7 @@
 
 \begin{document}
 \title{XCPC - Templates}
-\author {为什么不能V我50}
+\author {north-h}
 \date{}
 \maketitle
 \tableofcontents
