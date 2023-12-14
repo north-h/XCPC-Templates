@@ -1,4 +1,4 @@
-template<typename T, int N>
+template<class T>
 struct SegmentTree {
     struct Node {
         int l, r;
@@ -8,10 +8,10 @@ struct SegmentTree {
     vector<Node> tr;
     vector<T> a;
 
-    SegmentTree(const vector<T>& arr) {
-        tr.resize(N * 4);
+    SegmentTree(const vector<T> &arr, const int n) {
+        tr.resize(n * 4);
         a = arr;
-        build(1, 1, a.size());
+        build(1, 1, n);
     }
 
     void pushup(int u) {

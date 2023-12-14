@@ -1,11 +1,20 @@
-template<typename T>
+template<class T>
 struct RMQ {
-    int n;
+    T n;
     vector<T> arr;
     vector<vector<T>> f, g;
     vector<int> lg2;
-
+    RMQ(const vector<T> &a) :
+        n(a.size()), arr(a),
+        f(n, vector<T>(log2(n) + 1)),
+        g(n, vector<T>(log2(n) + 1)),
+        lg2(n + 1) {
+        init();
+    }
     void init() {
+        lg2[0] = -1;
+        for(int i = 1; i <= n; i ++)
+            lg2[i] = lg2[i >> 1] + 1;
         for (int i = 0; i < n; i++) {
             f[i][0] = arr[i];
             g[i][0] = arr[i];
@@ -16,17 +25,6 @@ struct RMQ {
                 g[i][j] = min(g[i][j - 1], g[i + (1 << (j - 1))][j - 1]);
             }
         }
-    }
-
-    RMQ(const vector<T>& arr) :
-            n(a.size()), arr(a),
-            f(n, vector<T>(log2(n) + 1)),
-            g(n, vector<T>(log2(n) + 1)),
-            lg2(n + 1) {
-        lg2[0] = -1;
-        for(int i = 1; i <= n; i ++)
-            lg2[i] = lg2[i >> 1] + 1;
-        init();
     }
 
     T query_max(int l, int r) {
