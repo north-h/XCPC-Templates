@@ -1,10 +1,10 @@
 template<class T, int P, int mod>
-struct Hash {
+struct SH {
     vector<T> p, h;
     string s;
-    Hash(const string &str) :
-        s(" " + str),
-        p(str.size() + 1) {
+    SH(const string &str) :
+        s(" " + str), p(str.size() + 1),
+        h(str.size() + 1) {
         p[0] = 1;
         for (int i = 1; i < s.size(); i++) {
             p[i] = (p[i - 1] * P) % mod;

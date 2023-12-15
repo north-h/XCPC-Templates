@@ -1,8 +1,8 @@
 template<class T, int P1, int mod1, int P2, int mod2>
-struct Hash {
+struct SH {
     vector<T> p1, p2, h1, h2;
     string s;
-    Hash(const string &str) :
+    SH(const string &str) :
         s(" " + str),
         p1(str.size() + 1),
         h1(str.size() + 1),
@@ -23,5 +23,10 @@ struct Hash {
 
     T get2(int l, int r) {
         return (h2[r] - (h2[l - 1] * p2[r - l + 1] % mod2) + mod2) % mod2;
+    }
+
+    bool query(int sl, int sr, int el, int er) {
+        if(get1(sl, sr) == get1(el, er) && get2(sl, sr) == get2(el, er))return true;
+        return false;
     }
 };

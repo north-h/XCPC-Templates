@@ -10,7 +10,7 @@
 \contentsline {subsection}{\numberline {2.1}单哈希}{7}{subsection.2.1}%
 \contentsline {subsection}{\numberline {2.2}双哈希}{8}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}自然溢出}{8}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}字典树}{8}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}字典树}{9}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}马拉车}{9}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}正反哈希}{10}{subsection.2.6}%
 \contentsline {section}{\numberline {3}杂项}{10}{section.3}%
