@@ -2,7 +2,11 @@ template <class T>
 struct BIT {
     vector<T> sum1, sum2;
     int n;
-    BIT(int n) : n(n), sum1(n + 1), sum2(n + 1) {}
+    BIT(int N) {
+        n = N;
+        sum1.resize(n + 1);
+        sum2.resize(n + 1);
+    }
     void add(int x, T k) {
         for(int i = x; i <= n; i += (i & -i))
             sum1[i] += k, sum2[i] += x * k;
