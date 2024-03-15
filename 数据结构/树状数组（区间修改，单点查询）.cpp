@@ -2,7 +2,10 @@ template <class T>
 struct BIT {
     vector<T> tr;
     int n;
-    BIT(int n) : n(n), tr(n), {}
+    BIT(int N) { 
+        n = N;
+        tr.resize(n + 1); 
+    }
     void add(int x, T k) {
         for(int i = x; i < n; i += (i & -i))
             tr[i] += k;

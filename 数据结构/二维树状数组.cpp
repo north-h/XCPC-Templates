@@ -3,7 +3,10 @@ struct BIT_2D {
     vector<vector<T>> tr;
     int n, m;
     
-    BIT_2D(int n, int m) : n(n), m(m), tr(n + 1, vector<T>(m + 1)) {}
+    BIT_2D(int N, int M) {
+        n = , m = M;
+        tr.resize(n + 1, vector<T>(m + 1));
+    }
     
     int lowbit(int x) { return x & (-x); }
     

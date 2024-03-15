@@ -1,17 +1,21 @@
-template<class T>
-struct SegmentTree {
-    struct Node {
-        int l, r;
-        T sum, lazy;
-    };
+template <class T>
+struct Seg{
+    struct Node{ int l, r, sum, lazy; };
 
     vector<Node> tr;
-    vector<T> a;
+    vector<int> a;
+    int n;
 
-    SegmentTree(const vector<T> &arr, const int n) {
+    Seg() {};
+
+    void init(int N) {
+        n = N;
         tr.resize(n * 4);
-        a = arr;
-        build(1, 1, n);
+        a.resize(n);
+    }
+
+    void add(int x, int k) {
+        a[x] = k;
     }
 
     void pushup(int u) {
@@ -28,7 +32,7 @@ struct SegmentTree {
         }
     }
 
-    void build(int u, int l, int r) {
+    void build(int u, int l,int r) {
         tr[u] = {l, r, a[l], 0};
         if (l == r)return;
         int mid = l + r >> 1;
@@ -38,7 +42,7 @@ struct SegmentTree {
         pushup(u);
     }
     //区间修改
-    void modify(int u, int l, int r, int k) {
+    void modify(int u,int l,int r,int k) {
         if (tr[u].l >= l && tr[u].r <= r) {
             tr[u].sum += (tr[u].r - tr[u].l + 1) * k;
             tr[u].lazy += k;
@@ -51,7 +55,7 @@ struct SegmentTree {
         pushup(u);
     }
     //单点修改
-    void modify(int u, int x, int k) {
+    void modify(int u,int x,int k) {
         if (tr[u].l == tr[u].r) {
             tr[u].sum += k;
             return;
@@ -61,7 +65,7 @@ struct SegmentTree {
         else modify(u << 1 | 1, x, k);
     }
     //区间查询
-    T query(int u, int l, int r) {
+    int query(int u,int l,int r) {
         if (tr[u].l >= l && tr[u].r <= r) return tr[u].sum;
         pushdown(u);
         int sum = 0;
@@ -69,5 +73,13 @@ struct SegmentTree {
         if (l <= mid)sum += query(u << 1, l, r);
         if (r > mid) sum += query(u << 1 | 1, l, r);
         return sum;
+    }
+    //单点查询
+    int query(int u,int x) {
+        if (tr[u].l == tr[u].r)return tr[u].sum;
+        pushdown(u);
+        int mid = tr[u].l + tr[u].r >> 1;
+        if (x <= mid)return query(u << 1, x);
+        else return query(u << 1 | 1, x);
     }
 };

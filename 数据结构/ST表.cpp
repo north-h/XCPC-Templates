@@ -1,26 +1,23 @@
 template<class T>
-struct RMQ {
+struct ST {
     T n;
-    vector<T> arr;
     vector<vector<T>> f, g;
     vector<int> lg2;
-    RMQ(const vector<T> &a) :
-        n(a.size()), arr(a),
-        f(n, vector<T>(log2(n) + 1)),
-        g(n, vector<T>(log2(n) + 1)),
-        lg2(n + 1) {
-        init();
-    }
-    void init() {
+    ST(const vector<T> &a) {
+        n = (int)a.size();
+        lg2.resize(n + 1);
         lg2[0] = -1;
-        for(int i = 1; i <= n; i ++)
+        for(int i = 1; i <= n; i ++) {
             lg2[i] = lg2[i >> 1] + 1;
-        for (int i = 0; i < n; i++) {
-            f[i][0] = arr[i];
-            g[i][0] = arr[i];
+        }
+        f.resize(n + 1, vector<T>(lg2[n] + 1));
+        g.resize(n + 1, vector<T>(lg2[n] + 1));
+        for (int i = 1; i <= n; i++) {
+            f[i][0] = a[i];
+            g[i][0] = a[i];
         }
         for (int j = 1; (1 << j) <= n; j++) {
-            for (int i = 0; i + (1 << j) - 1 < n; i++) {
+            for (int i = 1; i + (1 << j) - 1 <= n; i++) {
                 f[i][j] = max(f[i][j - 1], f[i + (1 << (j - 1))][j - 1]);
                 g[i][j] = min(g[i][j - 1], g[i + (1 << (j - 1))][j - 1]);
             }
