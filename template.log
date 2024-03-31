@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.8.26)  15 MAR 2024 15:01
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.8.26)  15 MAR 2024 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -790,14 +790,8 @@ LaTeX Font Warning: Font shape `TU/FandolFang-Regular(0)/b/n' undefined
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-Package rerunfilecheck Warning: File `template.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `template.out':
-(rerunfilecheck)             Before: 5D8EE51A8F767E544F66D887DDF15320;1905
-(rerunfilecheck)             After:  09E708323CC8E24C8E7F0D83EF5F01E1;1527.
+Package rerunfilecheck Info: File `template.out' has not changed.
+(rerunfilecheck)             Checksum: 09E708323CC8E24C8E7F0D83EF5F01E1;1527.
  ) 
 Here is how much of TeX's memory you used:
  15891 strings out of 476683
