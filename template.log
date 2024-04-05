@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.8.26)  15 MAR 2024 15:10
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.8.26)  5 APR 2024 10:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -705,6 +705,13 @@ Package hyperref Info: Link coloring ON on input line 79.
  [1
 
 ]
+
+Package xeCJK Warning: Unknown CJK family `kai' is being ignored.
+(xeCJK)                
+(xeCJK)                Try to use `\setCJKfamilyfont{kai}[<...>]{<...>}' to
+(xeCJK)                define it.
+
+[2]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
 nput line 88.
 
@@ -771,35 +778,40 @@ Package fontspec Info: Font family 'ConsolasBold(0)' created for font
 LaTeX Font Warning: Font shape `TU/ConsolasBold(0)/b/n' undefined
 (Font)              using `TU/ConsolasBold(0)/m/n' instead on input line 1.
 
-) (./数据结构/树状数组（区间修改，单点查询）.cpp)
-
-Package xeCJK Warning: Unknown CJK family `kai' is being ignored.
-(xeCJK)                
-(xeCJK)                Try to use `\setCJKfamilyfont{kai}[<...>]{<...>}' to
-(xeCJK)                define it.
-
-[2] (./数据结构/树状数组（区间修改，区间查询）.cpp) (./数据结构/线段树.cpp [3]
+) (./数据结构/树状数组（区间修改，单点查询）.cpp) [3] (./数据结构/树状数组（区间修改，区间查询）.cpp) (./数据结构/线段树.cpp
+[4]
 
 LaTeX Font Warning: Font shape `TU/FandolFang-Regular(0)/b/n' undefined
 (Font)              using `TU/FandolFang-Regular(0)/m/n' instead on input line 
 44.
 
-[4]) (./数据结构/ST表.cpp) [5] (./数据结构/二维树状数组.cpp) (./数据结构/并查集.cpp [6])
-(./杂项/快读快写.cpp) (./杂项/取模.cpp [7] [8]) (./数学/组合数（递推）.cpp) (./数学/组合数（逆元）.cpp
-[9]) [10] (./template.aux)
+[5]) (./数据结构/ST表.cpp) [6] (./数据结构/二维树状数组.cpp) (./数据结构/并查集.cpp [7])
+(./杂项/快读快写.cpp) (./杂项/取模.cpp [8] [9]) (./数学/组合数（递推）.cpp) (./数学/组合数（逆元）.cpp
+[10]) (./Kescholar/BIT.cpp [11]) (./Kescholar/Dijkstra.cpp [12])
+(./Kescholar/Dijkstra进阶.cpp [13]) (./Kescholar/eulerrange.cpp)
+(./Kescholar/hashpair.cpp [14]) (./Kescholar/KMP.cpp) (./Kescholar/ksm.cpp
+[15]) (./Kescholar/LCA.cpp [16]
+Missing character: There is no ∪ (U+222A) in font Consolas Bold/OT:script=latn;
+language=dflt;!
+) (./Kescholar/Matrix.cpp [17]) (./Kescholar/phi.cpp) (./Kescholar/Prim.cpp
+[18]) (./Kescholar/ST.cpp [19]) (./Kescholar/toposort.cpp [20])
+(./Kescholar/trie.cpp [21]) (./Kescholar/并查集.cpp [22]) (./Kescholar/二叉搜索树.cpp)
+(./Kescholar/二分图最大匹配.cpp [23] [24]) (./Kescholar/二维坐标离散化.cpp [25])
+(./Kescholar/区间素数筛.cpp) (./Kescholar/树状数组区间查询单点修改.cpp [26] [27]) [28]
+(./template.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `template.out' has not changed.
-(rerunfilecheck)             Checksum: 09E708323CC8E24C8E7F0D83EF5F01E1;1527.
+(rerunfilecheck)             Checksum: B76C9F1DC5016AF019E68ABC11D5DCC5;3480.
  ) 
 Here is how much of TeX's memory you used:
- 15891 strings out of 476683
- 327300 string characters out of 5807575
+ 16342 strings out of 476683
+ 333907 string characters out of 5807575
  2243012 words of memory out of 5000000
- 35864 multiletter control sequences out of 15000+600000
+ 36256 multiletter control sequences out of 15000+600000
  517429 words of font info for 94 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  72i,12n,81p,384b,1814s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on template.pdf (10 pages).
+Output written on template.pdf (28 pages).
